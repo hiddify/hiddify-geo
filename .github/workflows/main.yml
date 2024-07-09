@@ -36,9 +36,9 @@ jobs:
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs"]="country/geosite-af.srs"
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-gov-ru.srs"]="country/geosite-ru.srs"
         
-
         for url in "${!links[@]}"; do
           file_path=${links[$url]}
+          mkdir -p "$(dirname "$file_path")"
           temp_file=$(mktemp)
           
           # Fetch the content and save it to a temporary file
