@@ -45,9 +45,9 @@ jobs:
           # Fetch the content and save it to a temporary file
           if curl -s -f -L "$url" -o "$temp_file"; then
             mv "$temp_file" "$file_path"
-            echo "Successfully fetched $url"
+            echo "Successfully fetched $url to $file_path"
           else
-            echo "Failed to fetch $url"
+            echo "Failed to fetch $url ($file_path)"
             rm -f "$temp_file"
           fi
         done
