@@ -32,7 +32,7 @@ jobs:
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-af.srs"]="country/geoip-af.srs"
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ru.srs"]="country/geoip-ru.srs"
 
-        #links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs"]="country/geosite-af.srs"
+        #links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-af.srs"]="country/geosite-af.srs"
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs"]="country/geosite-ir.srs"
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-cn.srs"]="country/geosite-cn.srs"
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-gov-ru.srs"]="country/geosite-ru.srs"
@@ -51,6 +51,7 @@ jobs:
             rm -f "$temp_file"
           fi
         done
+        cp country/geosite-ir.srs country/geosite-af.srs
 
     - name: Commit and push changes
       run: |
