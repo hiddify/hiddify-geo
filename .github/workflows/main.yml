@@ -13,10 +13,11 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        ref: rule-set 
 
     - name: Fetch and update files
       run: |
-        git branch rule-set; git checkout rule-set
         # Define the URLs and the corresponding file paths
         declare -A links
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-phishing.srs"]="block/geoip-phishing.srs"
