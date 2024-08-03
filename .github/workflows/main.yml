@@ -38,8 +38,8 @@ jobs:
         #links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-af.srs"]="country/geosite-af.srs"
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs"]="country/geosite-ir.srs"
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-cn.srs"]="country/geosite-cn.srs"
-        links["https://github.com/savely-krasovsky/antizapret-sing-box/releases/latest/download/antizapret.srs"]="country/geosite-ru.srs"
-        #links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-gov-ru.srs"]="country/geosite-ru.srs"
+        #links["https://github.com/savely-krasovsky/antizapret-sing-box/releases/latest/download/antizapret.srs"]="country/geosite-ru-blocked.srs"
+        links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-ru.srs"]="country/geosite-ru.srs"
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-gov-ru.srs?"]="country/geosite-id.srs"
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-gov-ru.srs??"]="country/geosite-tr.srs"
         
