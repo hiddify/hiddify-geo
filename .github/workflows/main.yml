@@ -42,6 +42,9 @@ jobs:
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-ru.srs"]="country/geosite-ru.srs"
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-gov-ru.srs?"]="country/geosite-id.srs"
         links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-gov-ru.srs??"]="country/geosite-tr.srs"
+
+        links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-br.srs"]="country/geoip-br.srs"
+        links["https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs?"]="country/geosite-br.srs"
         
         for url in "${!links[@]}"; do
           file_path=${links[$url]}
